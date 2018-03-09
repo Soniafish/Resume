@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Sonia Lin</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/page1.css">
+    <style>
+    </style>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108090232-2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-108090232-2');
+    </script>
+    <!--end Global site tag (gtag.js) - Google Analytics -->
+
+</head>
+
+<!--必要設定：data-target:指向要監聽的導覽列-->
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+    <!--導覽列類別名稱要與data-target中一致-->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">sonia</a>
+            </div>
+            <div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <!--超連結連結到下面的段落ＩＤ-->
+                        <li><a href="#section1">About</a></li>
+                        <li><a href="#section2">Skills</a></li>
+                        <li><a href="#section3">Works-1</a></li>
+                        <li><a href="#section4">Works-2</a></li>
+                        <li><a href="#section5">Works-3</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!--section1開始-->
+    <div id="section1">
+        <!--全版面大型看板開始-->
+        <div class="jumbotron" id="header">
+            <div class="container">
+                <h1>Sonia Lin</h1>
+                <br/>
+                <h2>應徵：前端網頁工程師</h2>
+                <br/>
+                <p>過往的我在人文工作上耕耘,全力為弱勢兒童曁家庭服務</p>
+                <p>但對於資訊工程的興趣始終未消退,因而轉職</p>
+                <p>感謝抽空閱讀我的履歷，以下為我在前端網頁工程的能力與作品</p>
+            </div>
+        </div>
+        <!--全版面大型看板結尾-->
+    </div>
+    <!--section1結束-->
+    <!--section2開始-->
+    <div id="section2" class="container-fluid">
+        <div class="container">
+            <div class="row"></div>
+            <div class="row">
+                <h1>Skills</h1>
+                <ul>
+                    <li>
+                        <span><i class="fa fa-file-code-o" aria-hidden="true"></i>使用技術：</span> HTML
+                        <i class="fa fa-html5" aria-hidden="true"></i>、CSS<i class="fa fa-css3" aria-hidden="true"></i>、JavaScript、jQuery、Bootstrap</li>
+                    <li>
+                        <span><i class="fa fa-folder-open-o" aria-hidden="true"></i>作業環境：</span> Sublime、Brackets
+                    </li>
+                    <li>
+                        <span><i class="fa fa-cloud" aria-hidden="true"></i>使用工具：</span> GitHub
+                        <i class="fa fa-github" aria-hidden="true"></i></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--section2結束-->
+    <!--section3開始-->
+    <div id="section3" class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <h1>Works-1</h1>
+                <h2>js小品</h2>
+            </div>
+            <!--輪播開始-->
+            <div id="slideshow" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner" role="listbox">
+                    <!--輪播圖片或內容-->
+                    <div class="item active">
+                        <!--固定寬度大型看板開始-->
+                        <div class="container">
+                            <div class="jumbotron">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <h1><i class="fa fa-sticky-note" aria-hidden="true"></i>Note</h1>
+                                        <p>仿電子便利貼功能，運用creatElement產生便利貼，並註冊mouse事件來移動便利貼位置。</p>
+                                        <p><a class="btn btn-primary btn-lg" href="work3/note.html" target="_blank" role="button">See more</a></p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <img src="images/note.jpg" alt="便利貼">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--固定寬度大型看板結尾-->
+                    </div>
+                    <div class="item">
+                        <!--固定寬度大型看板開始-->
+                        <div class="container">
+                            <div class="jumbotron">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <h1><img src="images/atm.png" alt="atm">ATM</h1>
+                                        <p>註冊click事件於按鈕上，透過函式、if條件運算，將按鍵資料進行運算並回傳結果於螢幕上。</p>
+                                        <p><a class="btn btn-primary btn-lg" href="work3/atm.html" target="_blank" role="button">See more</a></p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <img src="images/atm.jpg" alt="atm">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--固定寬度大型看板結尾-->
+                    </div>
+                    <div class="item">
+                        <!--固定寬度大型看板開始-->
+                        <div class="container">
+                            <div class="jumbotron">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <h1><img src="images/postcard.png" alt="postcard">Postcard</h1>
+                                        <p>使用HTML5的canvas功能製做明信片，使用者可將照片搭配文字做成自己的明信片。</p>
+                                        <p><a class="btn btn-primary btn-lg" href="work3/canvas/canvas.html" target="_blank" role="button">See more</a></p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <img src="images/postcard.jpg" alt="postcard">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--固定寬度大型看板結尾-->
+                    </div>
+                    <div class="item">
+                        <!--固定寬度大型看板開始-->
+                        <div class="container">
+                            <div class="jumbotron">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <h1><i class="fa fa-list-ol" aria-hidden="true"></i>TodoList</h1>
+                                        <p>仿TODOLIS,使用HTML5的localStorage功能，讓使用者可記錄自己的工作清單。</p>
+                                        <p><a class="btn btn-primary btn-lg" href="work3/todoList.html" target="_blank" role="button">See more</a></p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <img src="images/todoList.jpg" alt="my food map page">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--固定寬度大型看板結尾-->
+                    </div>
+                    <div class="item">
+                        <!--固定寬度大型看板開始-->
+                        <div class="container">
+                            <div class="jumbotron">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <h1><img src="images/map.png" alt="map">Map</h1>
+                                        <p>仿做google map，使用google的geocoder服務，讓使用者透過選擇交通方式，取得交通路徑。</p>
+                                        <p><a class="btn btn-primary btn-lg" href="http://handoutdoc.org/static/tinaWeb/geocoder/geocoder.html" target="_blank" role="button">See more</a></p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <img src="images/map.jpg" alt="map">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--固定寬度大型看板結尾-->
+                    </div>
+                    <div class="item">
+                        <!--固定寬度大型看板開始-->
+                        <div class="container">
+                            <div class="jumbotron">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <h1><i class="fa fa-television" aria-hidden="true"></i>TV</h1>
+                                        <p>運用CSS3的transformat功能，並嵌入video，製作出電視效果，使用者可透過按鈕切換頻道。</p>
+                                        <p><a class="btn btn-primary btn-lg" href="work3/TV.html" target="_blank" role="button">See more</a></p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <img src="images/tv.jpg" alt="tv">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--固定寬度大型看板結尾-->
+                    </div>
+                </div>
+                <!--上一頁 下一頁 按鈕-->
+                <div class="control-btn">
+                    <a href="#slideshow" class="left carousel-control" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left"></span>
+                    </a>
+                    <a href="#slideshow" class="right carousel-control" data-slide="next"> <span class="glyphicon glyphicon-chevron-right"></span>
+                    </a>
+                </div>
+                <!--小圓點換頁-->
+                <ol class="carousel-indicators">
+                    <li data-target="#slideshow" data-slide-to="0" class="active"></li>
+                    <li data-target="#slideshow" data-slide-to="1"></li>
+                    <li data-target="#slideshow" data-slide-to="2"></li>
+                    <li data-target="#slideshow" data-slide-to="3"></li>
+                    <li data-target="#slideshow" data-slide-to="4"></li>
+                    <li data-target="#slideshow" data-slide-to="5"></li>
+                </ol>
+            </div>
+            <!--輪播結尾-->
+        </div>
+    </div>
+    <!--section4開始-->
+    <div id="section4" class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <h1>Work-2</h1>
+                <h2>個人網站</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="images/soniaHealthSpace.jpg" alt="sonia健康空間">
+                </div>
+                <div class="col-md-6">
+                    <h2>Sonia健康空間</h2>
+                    <ul>
+                        <li>運用HTML5的video嵌入功能，加上CSS3的transform效果，並設有暫停、播放與選台功能，使用者可以透過遙控電視般與影片一起運動。</li>
+                        <li>加入FB的社交插件，使用者可透過按讚向好友分享網頁，也可留言與網站管理員進行互動。</li>
+                        <li>結合google chart與HTML5的localStorage的功能，搭配JSON物件記載資料，使用者可以透過網頁紀錄自己的月健走資料。</li>
+                        <li>透過jQ語法輕鬆切換選擇器，使用者可快速切換網頁主題閱讀，不用重新或另外載入網頁。</li>
+                    </ul>
+                    <a class="btn btn-primary btn-md" href="http://handoutdoc.org/static/tinaWeb/health/health/index.html" target="_blank" role="button">See more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--section4結束-->
+    <!--section5開始-->
+    <div id="section5" class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <h1>Work-3</h1>
+                <h2>網頁切板與RWD</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="rwdWork">
+                        <img src="images/mobirise.jpg" alt="my Mobirise page">
+                        <h3>複刻Mobirise網頁</h3>
+                        <div class="info">
+                            <p><a class="btn btn-primary btn-md" href="page/mobirise.html" target="_blank" role="button">See more</a></p>
+                            <p>運用Bootstrap框架</p>
+                            <p>將CSS、RWD更上一層樓</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="rwdWork">
+                        <img src="images/gushi.jpg" alt="my gushi page">
+                        <h3>複刻gushit網頁</h3>
+                        <div class="info">
+                            <p><a class="btn btn-primary btn-md" href="page/gushi.html" target="_blank" role="button">See more</a></p>
+                            <p>運用HTML、CSS與RWD的技巧</p>
+                            <p>處理不同框格大小的欄位排列</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="rwdWork">
+                        <img src="images/iphone1.jpg" alt="my iphone page">
+                        <h3>手機履歷</h3>
+                        <div class="info">
+                            <p><a class="btn btn-primary btn-md" href="page/iphone.html" target="_blank" role="button">See more</a></p>
+                            <p>運用position功能手刻iphone</p>
+                            <p>透過手機頁面展示履歷</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="rwdWork">
+                        <img src="images/foodMap.jpg" alt="my food map page">
+                        <h3>我的美食地圖</h3>
+                        <div class="info">
+                            <p><a class="btn btn-primary btn-md" href="page/foodMap.html" target="_blank" role="button">See more</a></p>
+                            <p>運用normalize、網路字體、</p>
+                            <p>快速前往網頁關鍵字...等功能設定</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="images/fbIndex.jpg" alt="my first record page">
+                    <h3>Facebook登入頁</h3>
+                    <div class="info">
+                        <p><a class="btn btn-primary btn-lg" href="page/fbIndex.html" target="_blank" role="button">See more</a></p>
+                        <p>運用HTML與CSS功能，複刻FaceBook登入頁。</p>
+                    </div>
+                </div>
+            </div>
+-->
+        </div>
+    </div>
+    <!--section5結束-->
+    <!--footer開始-->
+    <footer>
+        <div class="container">
+            <p>聯絡方式：<i class="fa fa-envelope" aria-hidden="true"></i><a href="mailto:linke235@gmail.com">linke235@gmail.com</a><br/> Edit sonia</p>
+        </div>
+    </footer>
+    <!--footer結束-->
+</body>
+
+</html>
